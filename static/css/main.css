@@ -1,3 +1,4 @@
+
 body{
 	text-align:center;	
 	font-family: "Microsoft Yahei","Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti !important;
@@ -207,7 +208,7 @@ nav.global li a {
 		background: #FAFAFA;
 		position: relative;
 	}
-.convo a.images {
+.convo a.img {
 	float: left;
 	margin-right: 6px;
 	width: 30px;
@@ -219,7 +220,7 @@ nav.global li a {
 .attribution a:hover{
 	color:#09C;
 }
-.convo a.images img {
+.convo a.img img {
 	width: 30px;
 	height: 30px;
 }
@@ -404,7 +405,7 @@ form.format input.text, form.format textarea.text {
 	height: 26px;
 	background: url("../images/button.png") no-repeat;
 	border: none;
-	font-family: '΢���ź�';
+	font-family: '微软雅黑';
 	font-size: 12px;
 	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
 	color: #B5B5B5;
@@ -585,7 +586,7 @@ article.view dl.format dd {
 	z-index: 2;
 }
 /*********gotoTop************/
-/*********login*************/
+/*********login and reginster*************/
 form.account {
 	border-top: 1px solid #E1E1E1;
 	padding-top: 15px;
@@ -629,8 +630,82 @@ form.account div.aside, form.account div.act {
 form.format input[type="checkbox"] {
 	vertical-align: baseline;
 }
+#login-form .submit, #register-form .submit, #profile-setting-form div.act .submit, #profile-email-form div.act .submit, #profile-password-form div.act .submit, #event-join div.act .submit {
+	width: 65px;
+	height: 30px;
+	border: none;
+	font-family: '微软雅黑';
+	font-size: 12px;
+	padding-bottom: 4px;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+}
 #login-form .login {
-	background: url("/public/images/icons/button.png") -6px -12px no-repeat;
+	background: url("../images/button.png") -6px -12px no-repeat;
 	color: #225D1B;
 }
+#login-form .login:hover{
+    background-position: -6px -63px;
+}
+div.notify {
+	background: #F3F4F8;
+	text-align: center;
+	margin: 30px;
+	padding: 25px 15px;
+	border-radius: 5px;
+}
+div.notify div.info {
+	text-align: left;
+	padding-left: 30px;
+	background: url(../images/icon_notify_info.gif) no-repeat 0 0;
+	line-height: 18px;
+	font-size: 12px;
+	font-family: 'Arial';
+}
+
+#register-form .register:hover, #profile-setting-form div.act .submit:hover, #profile-email-form div.act .submit:hover, #profile-password-form div.act .submit:hover, #event-join div.act .submit:hover {
+	background-position: -93px -63px;
+}
+
+#register-form .disabled:hover {
+	background: url("../images/disable.png") no-repeat 0 0;
+	color: #203165;
+	cursor: default;
+}
+#register-form .register,
+#profile-setting-form div.act .submit,
+#profile-email-form div.act .submit,
+#profile-password-form div.act .submit  ,
+#event-join div.act .submit{
+    background: url("../images/button.png") no-repeat  -93px -12px ;
+    color: #203165;    
+}
+#register-form .disabled {
+	background: url("../images/disable.png") no-repeat 0 0;
+	color: #203165;
+	cursor: default;
+}
+form.format label.msg {
+	display: inline;
+	margin-left: 12px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #CB3235;
+	background: #FECECE;
+	border: 1px solid #F99;
+	padding: 2px 8px;
+	border-radius: 3px;
+	position: relative;
+}
+form.format label.msg em {
+	display: block;
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	left: -7px;
+	top: 5px;
+	background: url(../images/form_validate_arrow.gif);
+	z-index: 1;
+	text-indent: -999em;
+}
+
 /*********login*************/
