@@ -7,7 +7,7 @@ class Item(models.Model):
     puzi=models.ForeignKey(Puzi) 
     detail=models.CharField(max_length=256,null=True)
     create_time=models.DateTimeField(auto_now_add=True)
-    last_modify=models.DateTImeField(auto_now=True)
+    last_modify=models.DateTimeField(auto_now=True)
    #image=models.ImageField()
  
     def __unicode__(self):
