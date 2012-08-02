@@ -10,6 +10,7 @@ class Comment(models.Model):
     create_time=models.DateTimeField(auto_now_add=True)
     user=models.ForeignKey(User)
     item=models.ForeignKey(Item)
+    delete=models.SmallIntegerField(default=1)
 
     class Meta:
         verbose_name_plural=u'comments'
