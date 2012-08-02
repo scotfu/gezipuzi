@@ -1,0 +1,15 @@
+#coding=utf8
+from django.db import models
+from puzi.models import Puzi
+
+class Item(modles.Model):
+    name=models.CharField(max_length=256,null=true)
+    puzi=models.ForeignKey(Puzi) 
+   
+    def __unicode__(self):
+        return self.name
+    
+    class Meta:
+        verbose_name_plural=u'wuping'
+
+
