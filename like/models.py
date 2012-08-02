@@ -9,7 +9,7 @@ class Like(models.Model):
     create_time=models.DateTimeField(auto_now_add=True)
     
     def __unicode__(self):
-        return self.puzi.name+':'+self.user.name
+        return self.puzi.name+':'+self.user.username
     
     class Meta:
        verbose_name_plural=u'like'
