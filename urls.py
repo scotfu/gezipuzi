@@ -9,9 +9,14 @@ urlpatterns = patterns('',
         # url(r'^gezipuzi/', include('gezipuzi.foo.urls')),
         # Uncomment the next line to enable the admin:
         url(r'^puzi/(?P<id>\d+)/$','puzi.views.show'),
-        url(r'^puzi/(?P<id>\d+)/like/$','like.views.plus'),
-        url(r'^$','puzi.views.index'),
+        url(r'^item/(?P<id>\d+)/like/$','like.views.plus'),
+        url(r'^$','items.views.index'),
+        url(r'^pu/$','items.views.pu'),
+        url(r'^comment/add/$','comments.views.add'),
+
+
         url(r'^admin/', include(admin.site.urls)),
+
 )
 
 #if settings.DEBUG:

@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 
 class CommentAdmin(admin.ModelAdmin):
-    list_display=('id','title','content','user','item')
-    search_fields=('title','user','item')
+    list_display=('id','title','content','user','puzi')
+    search_fields=('title','user','puzi')
 
 admin.site.register(Comment,CommentAdmin)

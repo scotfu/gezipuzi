@@ -1,7 +1,7 @@
 #coding =utf-8
 from django.db import models
 from django.contrib.auth.models import User
-from items.models import Item
+from puzi.models import Puzi
 
 class Comment(models.Model):
 
@@ -9,7 +9,7 @@ class Comment(models.Model):
     content=models.TextField(max_length=512)
     create_time=models.DateTimeField(auto_now_add=True)
     user=models.ForeignKey(User)
-    item=models.ForeignKey(Item)
+    puzi=models.ForeignKey(Puzi)
     delete=models.SmallIntegerField(default=1)
 
     class Meta:

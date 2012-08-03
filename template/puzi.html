@@ -12,4 +12,55 @@ puzi biaoti
 {{puzi.weibo}}
 {{puzi.openhour}}
 {{puzi.likecount}}
+
+{% if puzi.comment_set.all %}
+{% for comment in puzi.comment_set.all %}
+    <div id="comment">
+    <div class="page-header"> 
+    <h4> <i class="icon-comment"></i>{{comment.title}} </h4>
+    {{comment.create_time}}<br/>
+    {{comment.content|safe}}<br/>
+    来自于:{{comment.user.username}}
+
+    </div>
+
+    </div>
+{% endfor  %}
+{% else %}
+<div class="page-header">
+  <h4>暂无评价</h4>
+</div>
+
+{% endif %}
+
+
+
+<div id ="addcomment">
+<div class="page-header">
+ <h3> <i class="icon-plus"></i>添加评价</h3> 
+</div>
+
+<form id="" method="post" action="/comment/add/" class="horizontal">
+<fieldset>
+<input type="hidden" name="puzi" value="{{puzi.id}}" />
+    <div class="control-group">
+      <label class="control-label" for="input01">标题</label>
+      <div class="controls">
+        <input type="text" class="input-xlarge" id="input01" name="title">
+      </div>
+    </div>
+          <div class="control-group">
+            <label class="control-label" for="textarea">内容(支持换行操作&ltbr/>)</label>
+            <div class="controls">
+              <textarea class="input-xlarge" id="textarea" rows="3" name="content"></textarea>
+            </div>
+          </div>
+  </fieldset>
+
+<button type="submit" class="btn">提交</button>
+
+</form>
+
+
+
 {% endblock content %}

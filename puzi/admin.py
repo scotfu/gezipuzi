@@ -4,7 +4,7 @@ from puzi.models import Puzi
 
 class PuziAdmin(admin.ModelAdmin):
    # list_filter   
-    list_display=('id','name','user','like_count')
+    list_display=('id','name','user',)
     search_fields=('name',)
 
 admin.site.register(Puzi,PuziAdmin)

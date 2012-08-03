@@ -17,7 +17,7 @@ class Puzi(models.Model):
     create_time=models.DateTimeField(auto_now_add=True)
     last_modify=models.DateTimeField(auto_now=True)
     order_weight=models.DecimalField(max_digits=5, decimal_places=2,blank=True)
-    like_count=models.IntegerField(max_length=10,blank=True)
+
 
     def __unicode__(self):
         return self.name

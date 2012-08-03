@@ -6,19 +6,19 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from like.models import Like
-from puzi.models import Puzi
+from items.models import Item
 from django.contrib.auth.models import User
 
 def plus(request,id):
     if request.method=='GET':
         try:
-            puzi=Puzi.objects.get(pk=id)
+            item=Item.objects.get(pk=id)
         except Exception, e:
             return HttpResponse(e)
-        if not Like.objects.filter(user=request.user,puzi=puzi):
-            Like.objects.create(user=request.user, puzi=puzi)
-            puzi.like_count+=1
-            puzi.save()
+        if not Like.objects.filter(user=request.user,item=item):
+            Like.objects.create(user=request.user, item=item)
+            item.like_count+=1
+            item.save()
             return HttpResponse('succeed')
         return HttpResponse('already voted')
 
