@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 class Puzi(models.Model):
     name=models.CharField(max_length=256,null=True)
     user=models.ForeignKey(User)
-    #logo=models.ImageField()
+    logo=models.FileField(upload_to='logo', verbose_name='logo')
     address=models.CharField(max_length=256,blank=True)
     latitue=models.CharField(max_length=15,blank=True)
     longtitue=models.CharField(max_length=15,blank=True)

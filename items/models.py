@@ -8,7 +8,7 @@ class Item(models.Model):
     detail=models.CharField(max_length=256,null=True)
     create_time=models.DateTimeField(auto_now_add=True)
     last_modify=models.DateTimeField(auto_now=True)
-   #image=models.ImageField()
+    image=models.FileField(upload_to='item', verbose_name='封面')
  
     def __unicode__(self):
         return self.name
