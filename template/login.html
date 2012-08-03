@@ -1,0 +1,203 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="zh-cn" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="zh-cn" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="zh-cn" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="zh-cn"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="css/style.css?v=2">   
+  <script src="js/jquery-1.6.1.min.js"></script>
+  <script src="js/libs/modernizr-1.7.min.js"></script>
+  <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jquerytools.org/media/css/standalone.css">
+  <link rel="stylesheet" type="text/css" href="http://jquerytools.org/media/css/scrollable-horizontal.css">
+  <link rel="stylesheet" type="text/css" href="http://jquerytools.org/media/css/scrollable-buttons.css">
+   <link rel="stylesheet" href="css/main.css?v=2">
+
+</head>
+
+<body>
+
+  <div id="container">
+    <header id="header">
+       <div class="container">
+			<h1><a class="png_bg" href="/">GeekPark</a></h1>
+			<nav class="global">
+				<div class="city">
+					<a class="on">北京</a>
+					<div class="list">
+						<a href="#">上海</a><a href="#">广州</a><a href="#">天津</a><a href="#">上海</a><a href="#">广州</a><a href="#">天津</a><a href="#">上海</a><a href="#">广州</a><a href="#">天津</a>
+					</div>
+				</div>
+				<ul>
+					<li class="on">
+						<a href="/read/seed" title="服装">服装</a>
+					</li>
+					<li >
+						<a href="/cast/" title="3C产品">3C产品</a>
+					</li>
+				
+					<li >
+						<a href="/event/" title="茶叶">茶叶</a>
+					</li>
+					<li >
+						<a href="/event/" title="美发造型">美发造型</a>
+					</li>
+					<li >
+						<a href="/event/" title="更多">更多</a>
+					</li>
+					
+				  
+				</ul>
+			</nav>
+			<div id="searchbox">
+				<form id="search-form" name="global-search" action="/search/all" method="post">
+					<input type="search" id="search" name="search" placeholder="搜索" autocomplete="off" class="ac_input">
+					<input type="submit" class="submit" value="">
+				</form>
+			</div>
+			<div class="tool-box">
+				<ul>
+							<li class="first">
+						<a href="/user/login" title="登录">登录</a>
+					</li><li>
+						<a href="/user/register" title="注册">注册</a>
+					</li>
+						</ul>
+			</div>
+			<div id="ajaxing" style="display: none;"></div>
+		</div>
+		
+    </header>
+    <div id="main_shop" role="main">
+		<div id="shop_wrap">
+			<div class="clearfix w-s">
+				<div class="wide">
+					<article class="view" style="min-height:550px">
+						<header>
+							<h1>欢迎登陆格子店铺</h1>
+						</header>
+						<form id="login-form" method="post" action="/user/logon" class="format account"> 
+							 <div>
+								 <label for="username">邮箱</label>
+								 <input type="text" class="text" name="username" id="username" autofocus="">
+							 </div>
+							 <div>
+								 <label for="password">密码</label>
+								 <input type="password" class="text" name="password" id="password">
+							 </div>
+							 <div class="aside">
+								 <input type="checkbox" id="remember" name="remember">
+								 <label for="remember">记住我</label> |
+								 &nbsp;&nbsp;<a href="/user/forgot_password">忘记密码</a>
+							 </div>
+							 <div class="act">
+								 <input type="submit" value="登录" name="submit" class="submit login png_bg">
+							 </div>
+						</form>
+						
+					</article>
+				</div><!-- wide end-->
+				<div class="side">
+					<div class="notify">
+						<div class="info"> 
+							 如果您还未注册格子店铺，请<a href="/user/register">注册</a> 。	</div>
+					</div>
+				</div><!-- side end-->
+			</div>
+		</div>
+    </div><!-- container end-->
+
+    <footer>
+		<div id="footerlinks">
+            <a href="http://twitter.com/jquerytools">钱方支付</a>
+            <span class="sep">|</span>
+            <a href="https://github.com/jquerytools/jquerytools">关于我们</a>
+            <span class="sep">|</span> <a href="https://github.com/jquerytools/site">联系我们</a>
+            <span class="sep">|</span>
+            <a href="https://github.com/jquerytools/jquerytools/issues">备案信息</a>
+        </div>
+
+    </footer>
+  </div> <!--! end of #container -->
+  <div id="scrollTop" >
+    <div class="level-2"></div>
+    <div class="level-3"></div>
+  </div>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+   <script src="js/jquery.infinitescroll.min.js"></script>
+  <!-- end scripts-->
+
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix(".back-png,.img-png"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+  <script>
+	  $(function(){
+		$(".map_btn").click(function(){
+			$(".map").slideToggle();
+		})	
+		 
+	  })
+	
+	/*var new_data = eval('('+response+')');*/
+  </script>
+  <script>
+$(function() {
+$(".scrollable").scrollable();
+
+$(".items img").click(function() {
+	// see if same thumb is being clicked
+	if ($(this).hasClass("active")) { return; }
+
+	// calclulate large image's URL based on the thumbnail URL (flickr specific)
+	var url = $(this).attr("src").replace("_t", "");
+
+	// get handle to element that wraps the image and make it semi-transparent
+	var wrap = $("#image_wrap").fadeTo("medium", 0.5);
+
+	// the large image from www.flickr.com
+	var img = new Image();
+
+
+	// call this function after it's loaded
+	img.onload = function() {
+
+		// make wrapper fully visible
+		wrap.fadeTo("fast", 1);
+
+		// change the image
+		wrap.find("img").attr("src", url);
+
+	};
+
+	// begin loading the image from www.flickr.com
+	img.src = url;
+
+	// activate item
+	$(".items img").removeClass("active");
+	$(this).addClass("active");
+
+// when page loads simulate a "click" on the first image
+}).filter(":first").click();
+});
+</script>
+
+</body>
+</html>
