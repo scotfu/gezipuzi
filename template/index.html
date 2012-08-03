@@ -1,105 +1,80 @@
 {% extends "base.html" %}
 {% block title %}格子铺子首页{% endblock title %}
 {% block content %}
+ <div id="main" role="main">
+		 {% for item in list %}
 		<div class="element_test other nonmetal   " data-symbol="H" data-category="other">
 			  <a href="#" target="_self" class="img  x">
-				 <img src="http://img.hb.aicdn.com/b2364b5ea0659e61bf34d562f801179939d860b4231f0-JWy0Sh_fw192" width="207" height="151" alt="我生活在玛丽隔壁采集到想要">
+				 <img src="/media/{{item.image}}" width="207" height="256"  alt="{{item.name}}">
 			  </a>
-			  <div class="convo attribution clearfix"><p><a href="/axsash123/" title="我生活在玛丽隔壁" class="img x">
-			  <img src="http://img.hb.aicdn.com/f9638f42128c7d7e0c6bd1d51355b4ddf61c8c5ef3b-d5dQIi_sq75"></a><a href="/axsash123/" class="author x">我生活在玛丽隔壁</a>&nbsp;采集到&nbsp;<a href="/boards/1464529/" class="x">想要</a></p><a title="回复" class="replyButton"></a>
-			  </div>
-			  <div class="actions"><div class="right"><a data-id="12245414" href="#" onclick="return false;" class="like btn btn11 wbtn"><strong><em></em>喜欢</strong><span></span></a></div><div class="left"></div></div>		  
-		</div>
-		<div class="element_test other nonmetal   " data-symbol="H" data-category="other">
-			  <a href="#" target="_self" class="img  x">
-				<img src="http://img.hb.aicdn.com/96449b5a476e5bfdbb77371ee3629f9e5defe33b3407f-MPkzuE_fw192" width="207" height="1403" alt="風中的珠兒采集到..艺...">
-			  </a>
-			  <div class="convo attribution clearfix"><p><a href="/axsash123/" title="我生活在玛丽隔壁" class="img x">
-			  <img src="http://img.hb.aicdn.com/f9638f42128c7d7e0c6bd1d51355b4ddf61c8c5ef3b-d5dQIi_sq75"></a><a href="/axsash123/" class="author x">我生活在玛丽隔壁</a>&nbsp;采集到&nbsp;<a href="/boards/1464529/" class="x">想要</a></p><a title="回复" class="replyButton"></a>
-			  </div>
-			  <div class="actions"><div class="right"><a data-id="12245414" href="#" onclick="return false;" class="like btn btn11 wbtn"><strong><em></em>喜欢</strong><span></span></a></div><div class="left"></div></div>		  
-		</div>
-		<div class="element_test other nonmetal   " data-symbol="H" data-category="other">
-			  <a href="#" target="_self" class="img  x">
-				 <img src="http://img.hb.aicdn.com/da94b2d48674ee6fe77de449268d18080107088616325-XPX47x_fw192" width="207" height="301" alt="douweiwei采集到海报设计">
-			  </a>
-			  <div class="convo attribution clearfix"><p><a href="/axsash123/" title="我生活在玛丽隔壁" class="img x">
-			  <img src="http://img.hb.aicdn.com/f9638f42128c7d7e0c6bd1d51355b4ddf61c8c5ef3b-d5dQIi_sq75"></a><a href="/axsash123/" class="author x">我生活在玛丽隔壁</a>&nbsp;采集到&nbsp;<a href="/boards/1464529/" class="x">想要</a></p><a title="回复" class="replyButton"></a>
-			  </div>
-			  <div class="actions"><div class="right"><a data-id="12245414" href="#" onclick="return false;" class="like btn btn11 wbtn"><strong><em></em>喜欢</strong><span></span></a></div><div class="left"></div></div>		  
-		</div>
-		<div class="element_test other nonmetal   " data-symbol="H" data-category="other">
-			  <a href="#" target="_self" class="img  x">
-				 <img class="_j_thumnail" width="207" height="317" src="http://jpp1.imghb.com/pic/pic/20/52/39/1408396120523975_a200x400.jpg" alt="">
-			  </a>
-			  <div class="convo attribution clearfix"><p><a href="/axsash123/" title="我生活在玛丽隔壁" class="img x">
-			  <img src="http://img.hb.aicdn.com/f9638f42128c7d7e0c6bd1d51355b4ddf61c8c5ef3b-d5dQIi_sq75"></a><a href="/axsash123/" class="author x">我生活在玛丽隔壁</a>&nbsp;采集到&nbsp;<a href="/boards/1464529/" class="x">想要</a></p><a title="回复" class="replyButton"></a>
-			  </div>
-			  <div class="actions"><div class="right"><a data-id="12245414" href="#" onclick="return false;" class="like btn btn11 wbtn"><strong><em></em>喜欢</strong><span></span></a></div><div class="left"></div></div>		  
-		</div>
-		<div class="element_test other nonmetal   " data-symbol="H" data-category="other">
-			  <a href="#" target="_self" class="img  x">
-				<img src="http://img.hb.aicdn.com/773218b0ff80cf31ccc32bf855a390965007c835a5e1-9SfLiL_fw192" width="207" height="256" alt="月灵莲采集到新娘嫁衣">
-			  </a>
-			  <div class="convo attribution clearfix"><p><a href="/axsash123/" title="我生活在玛丽隔壁" class="img x">
-			  <img src="http://img.hb.aicdn.com/f9638f42128c7d7e0c6bd1d51355b4ddf61c8c5ef3b-d5dQIi_sq75"></a><a href="/axsash123/" class="author x">我生活在玛丽隔壁</a>&nbsp;采集到&nbsp;<a href="/boards/1464529/" class="x">想要</a></p><a title="回复" class="replyButton"></a>
-			  </div>
-			  <div class="actions"><div class="right"><a data-id="12245414" href="#" onclick="return false;" class="like btn btn11 wbtn"><strong><em></em>喜欢</strong><span></span></a></div><div class="left"></div></div>		  
-		</div>
-		<div class="element_test other nonmetal   " data-symbol="H" data-category="other">
-			  <a href="#" target="_self" class="img  x">
-				<img src="http://img.hb.aicdn.com/3994a13ef5a32b8a2e38e29326a0c07a0bdc5914dc1a-HXL3Np_fw192" width="207" height="665" alt="☆丢了采集到xi huan">
-			  </a>
-			  <div class="convo attribution clearfix"><p><a href="/axsash123/" title="我生活在玛丽隔壁" class="img x">
-			  <img src="http://img.hb.aicdn.com/f9638f42128c7d7e0c6bd1d51355b4ddf61c8c5ef3b-d5dQIi_sq75"></a><a href="/axsash123/" class="author x">我生活在玛丽隔壁</a>&nbsp;采集到&nbsp;<a href="/boards/1464529/" class="x">想要</a></p><a title="回复" class="replyButton"></a>
-			  </div>
-			  <div class="actions"><div class="right"><a data-id="12245414" href="#" onclick="return false;" class="like btn btn11 wbtn"><strong><em></em>喜欢</strong><span></span></a></div><div class="left"></div></div>		  
-		</div>
-		<div class="element_test other nonmetal   " data-symbol="H" data-category="other">
-			  <a href="#" target="_self" class="img  x">
-				<img src="http://img.hb.aicdn.com/f71511615fa3ffac547de146ad0025b27b693d10a921-XQaeLC_fw192" width="207" height="248" alt="№蓅哘鉽╰☆╮蕜傷采集到美食控0">
-			  </a>
-			  <div class="convo attribution clearfix"><p><a href="/axsash123/" title="我生活在玛丽隔壁" class="img x">
-			  <img src="http://img.hb.aicdn.com/f9638f42128c7d7e0c6bd1d51355b4ddf61c8c5ef3b-d5dQIi_sq75"></a><a href="/axsash123/" class="author x">我生活在玛丽隔壁</a>&nbsp;采集到&nbsp;<a href="/boards/1464529/" class="x">想要</a></p><a title="回复" class="replyButton"></a>
-			  </div>
-			  <div class="actions"><div class="right"><a data-id="12245414" href="#" onclick="return false;" class="like btn btn11 wbtn"><strong><em></em>喜欢</strong><span></span></a></div><div class="left"></div></div>		  
-		</div>
-		<div class="element_test other nonmetal   " data-symbol="H" data-category="other">
-			  <a href="#" target="_self" class="img  x">
-				<img src="http://img.hb.aicdn.com/0dece1f5c5f3f4ed642401c5cf1d28efba2c9b6f31eb7-rDSJFj_fw192" width="207" height="288" alt="蓝菀儿采集到摄影|艺术">
-			  </a>
-			  <div class="convo attribution clearfix"><p><a href="/axsash123/" title="我生活在玛丽隔壁" class="img x">
-			  <img src="http://img.hb.aicdn.com/f9638f42128c7d7e0c6bd1d51355b4ddf61c8c5ef3b-d5dQIi_sq75"></a><a href="/axsash123/" class="author x">我生活在玛丽隔壁</a>&nbsp;采集到&nbsp;<a href="/boards/1464529/" class="x">想要</a></p><a title="回复" class="replyButton"></a>
+			  <div class="convo attribution clearfix"><p><a href="/puzi/{{item.puzi.id}}" title="{{item.name}}" class="img x">
+			  <img src="/media/{{item.image}}"></a><a href="/axsash123/" class="author x">{{item.puzi.name}}</a>&nbsp;采集到&nbsp;<a href="/boards/1464529/" class="x">{{item.puzi.detail}}</a></p><a title="回复" class="replyButton"></a>
 			  </div>
 			  <div class="actions"><div class="right"><a data-id="12245414" href="#" onclick="return false;" class="like btn btn11 wbtn"><strong><em></em>喜欢</strong><span></span></a></div><div class="left"></div></div>		  
 		</div>
 		
-		<div class="element_test other nonmetal   " data-symbol="H" data-category="other">
-			  <a href="#" target="_self" class="img  x">
-				 <img class="_j_thumnail" width="207" height="256" src="http://jpp2.imghb.com/pic/pic/77/57/33/1389728877573379_a200x400.jpeg" alt="">
-			  </a>
-			  <div class="convo attribution clearfix"><p><a href="/axsash123/" title="我生活在玛丽隔壁" class="img x">
-			  <img src="http://img.hb.aicdn.com/f9638f42128c7d7e0c6bd1d51355b4ddf61c8c5ef3b-d5dQIi_sq75"></a><a href="/axsash123/" class="author x">我生活在玛丽隔壁</a>&nbsp;采集到&nbsp;<a href="/boards/1464529/" class="x">想要</a></p><a title="回复" class="replyButton"></a>
-			  </div>
-			  <div class="actions"><div class="right"><a data-id="12245414" href="#" onclick="return false;" class="like btn btn11 wbtn"><strong><em></em>喜欢</strong><span></span></a></div><div class="left"></div></div>		  
-		</div>
-		<div class="element_test other nonmetal   " data-symbol="H" data-category="other">
-			  <a href="#" target="_self" class="img  x">
-				 <img class="_j_thumnail" width="207" height="256" src="http://jpp2.imghb.com/pic/pic/77/57/33/1389728877573379_a200x400.jpeg" alt="">
-			  </a>
-			  <div class="convo attribution clearfix"><p><a href="/axsash123/" title="我生活在玛丽隔壁" class="img x">
-			  <img src="http://img.hb.aicdn.com/f9638f42128c7d7e0c6bd1d51355b4ddf61c8c5ef3b-d5dQIi_sq75"></a><a href="/axsash123/" class="author x">我生活在玛丽隔壁</a>&nbsp;采集到&nbsp;<a href="/boards/1464529/" class="x">想要</a></p><a title="回复" class="replyButton"></a>
-			  </div>
-			  <div class="actions"><div class="right"><a data-id="12245414" href="#" onclick="return false;" class="like btn btn11 wbtn"><strong><em></em>喜欢</strong><span></span></a></div><div class="left"></div></div>		  
-		</div>
-		<div class="element_test other nonmetal   " data-symbol="H" data-category="other">
-			  <a href="#" target="_self" class="img  x">
-				 <img class="_j_thumnail" width="207" height="256" src="http://jpp2.imghb.com/pic/pic/77/57/33/1389728877573379_a200x400.jpeg" alt="">
-			  </a>
-			  <div class="convo attribution clearfix"><p><a href="/axsash123/" title="我生活在玛丽隔壁" class="img x">
-			  <img src="http://img.hb.aicdn.com/f9638f42128c7d7e0c6bd1d51355b4ddf61c8c5ef3b-d5dQIi_sq75"></a><a href="/axsash123/" class="author x">我生活在玛丽隔壁</a>&nbsp;采集到&nbsp;<a href="/boards/1464529/" class="x">想要</a></p><a title="回复" class="replyButton"></a>
-			  </div>
-			  <div class="actions"><div class="right"><a data-id="12245414" href="#" onclick="return false;" class="like btn btn11 wbtn"><strong><em></em>喜欢</strong><span></span></a></div><div class="left"></div></div>		  
-		</div>
-		
+		{% endfor %}
+	
+</div>		
 {% endblock content%}
+
+ <script>
+	  $(function(){
+		  var page = 2;
+		  var $container = $('#main');
+		  $container.isotope({
+				itemSelector : '.element_test',
+				masonry : {
+				  columnWidth : 247
+				}
+		  });
+		  var infinite_load = function(){
+			var w_h = $(window).height();
+			var d_h = $(document).height();
+			var limit = 50; 
+			if($(document).scrollTop() >= 100){
+				$("#scrollTop").fadeIn();
+			}else{
+				$("#scrollTop").fadeOut();
+			}
+			if( w_h + $(document).scrollTop() + limit >=  d_h){
+						$.ajax({
+							url: "/pu?page="+page,
+							type: "get",
+							//data: page,
+							beforeSend: function() {
+								
+							},
+							success: function(response) {
+								try {
+									var $items = $(response)
+								    page = page+1;
+									 $container.append($items).isotope( 'appended', $items);
+									
+								} catch(error) {}
+							},
+							complete: function() {},
+							error: function() {}
+						})
+				 // var $items = $('<div class="element_test"><img width="207" height="256"src="http://jpp2.imghb.com/pic/pic/77/57/33/1389728877573379_a200x400.jpeg" alt=""></div>')
+				 // $container.append($items).isotope( 'appended', $items);
+			}
+		};
+		$(window).scroll(infinite_load)
+			$("#scrollTop").click(function(){
+				$("#scrollTop").hide();
+				$('html,body').animate({scrollTop: '0px'}, 300);
+				return false;			
+			})		
+			$("#scrollTop").hover(
+				function(){
+					$(".level-2").animate({opacity: '1.0'},100);
+				},
+				function(){
+					$(".level-2").animate({opacity: '0.0'},100);
+				}
+			)
+	  })
+	
+	/*var new_data = eval('('+response+')');*/
+  </script>

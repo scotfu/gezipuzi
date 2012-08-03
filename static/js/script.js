@@ -1,7 +1,5 @@
-/* Author: 
 
-
-*/
+/*$( function(){
 	$(window).scroll(function(){
 		if($(document).scrollTop() >= 100){
 			$("#scrollTop").fadeIn();
@@ -22,6 +20,9 @@
 			$(".level-2").animate({opacity: '0.0'},100);
 		}
 	)
+
+})*/
+
 
 
 
