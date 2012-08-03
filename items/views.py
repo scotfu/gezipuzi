@@ -11,7 +11,7 @@ from puzi.models import Puzi
 
 def index(request):
     try:
-        items=request,Item.objects.all().order_by('create_time')[0:20]
+        items=Item.objects.all().order_by('create_time')[0:20]
     except Exception,e:
         print e
         return HttpResponse('error')

@@ -13,7 +13,9 @@ urlpatterns = patterns('',
         url(r'^$','items.views.index'),
         url(r'^pu/$','items.views.pu'),
         url(r'^comment/add/$','comments.views.add'),
-
+        url(r'^accounts/login/$','accounts.views.loginview'),
+        url(r'^accounts/logut/$','accounts.views.logout'),
+        url(r'^accounts/register/$','accounts.views.register'),
 
         url(r'^admin/', include(admin.site.urls)),
 
