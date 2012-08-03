@@ -1,5 +1,5 @@
 # Django settings for gezipuzi project.
-import sys,os
+import sys,os,django
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -72,6 +72,7 @@ STATIC_URL = ' '
 # Examples: "http://foo.com/static/admin/", "/static/admin/".
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 
+ADMIN_MEDIA_ROOT = os.path.join(django.__path__[0],'contrib/admin/media/')   
 # Additional locations of static files
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
