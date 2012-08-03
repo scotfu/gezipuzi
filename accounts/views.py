@@ -56,6 +56,7 @@ def register(request):
         user_profile=user.get_profile()
         user_profile.nickname=request.POST['nickname']
         user_profile.save()
+        user.backend = 'django.contrib.auth.backends.ModelBackend'
         login(request, user)
         return HttpResponseRedirect('/')
     return render_to_response('register.html',

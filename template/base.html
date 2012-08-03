@@ -59,7 +59,7 @@
 			</div>
 			<div class="tool-box">
 {% if user.is_authenticated %}
-{{user.username}}<a href="/accounts/logout/">登出</a>
+{{user.get_profile.nickname}}<a href="/accounts/logout/">登出</a>
 {% else %}
                                 <ul>
                                   <li class="first">
