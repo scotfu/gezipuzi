@@ -10,7 +10,14 @@ from items.models import Item
 from puzi.models import Puzi
 
 def index(request):
+    try:
+        items=request,Item.objects.all().order_by('create_time')[0:20]
+    except Exception,e:
+        print e
+        return HttpResponse('error')
+    print items
     return render_to_response('index.html',
+        {'list':items},
         context_instance=RequestContext(request))
 
 def pu(request):
