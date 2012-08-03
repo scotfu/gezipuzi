@@ -7,6 +7,10 @@ from django.template import RequestContext
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from puzi.models import Puzi
 
+def index(requet):
+    return render_to_response('index.html')
+
+
 def show(request,id):
     if request.method=='GET':
         try:
