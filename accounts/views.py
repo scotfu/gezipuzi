@@ -12,8 +12,6 @@ from django.contrib.auth import authenticate, login, logout
 
 def loginview(request):
     if request.method == 'POST':
-        form=LoginForm(request.POST)
-        session_cart=getCart(request)
         try:
             next= request.POST['next']
         except:
@@ -56,9 +54,10 @@ def register(request):
         email=request.POST['email'],
             )
         user_profile=user.get_profile()
-        user_profile.nickname=form.cleaned_data['nickname']
+        user_profile.nickname=request.POST['nickname']
         user_profile.save()
-        return HttpResponseRedirect('/accounts/login/')
+        login(request, user)
+        return HttpResponseRedirect('/')
     return render_to_response('register.html',
            
             context_instance=RequestContext(request),

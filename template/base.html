@@ -58,13 +58,20 @@
 				</form>
 			</div>
 			<div class="tool-box">
-				<ul>
-							<li class="first">
-						<a href="/accounts/login/" title="登录">登录</a>
-					</li><li>
-						<a href="/accounts/register/" title="注册">注册</a>
-					</li>
-						</ul>
+{% if user.is_authenticated %}
+{{user.username}}<a href="/accounts/logout/">登出</a>
+{% else %}
+                                <ul>
+                                  <li class="first">
+
+                                                <a href="/accounts/login/" title="登录">登录</a>
+
+                                        </li><li>
+                                                <a href="/accounts/register/" title="注册">注册</a>
+                                        </li>
+
+                                                </ul>
+{% endif %}
 			</div>
 			<div id="ajaxing" style="display: none;"></div>
 		</div>
