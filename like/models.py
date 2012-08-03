@@ -10,6 +10,7 @@ class Like(models.Model):
     
     def __unicode__(self):
         return self.puzi.name+':'+self.user.username
+
     
     class Meta:
        verbose_name_plural=u'like'
