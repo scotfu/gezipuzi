@@ -1,0 +1,320 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="zh-cn" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="zh-cn" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="zh-cn" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="zh-cn"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="css/style.css?v=2">   
+  <script src="js/jquery-1.6.1.min.js"></script>
+  <script src="js/libs/modernizr-1.7.min.js"></script>
+  <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jquerytools.org/media/css/standalone.css">
+  <link rel="stylesheet" type="text/css" href="http://jquerytools.org/media/css/scrollable-horizontal.css">
+  <link rel="stylesheet" type="text/css" href="http://jquerytools.org/media/css/scrollable-buttons.css">
+   <link rel="stylesheet" href="css/main.css?v=2">
+
+</head>
+
+<body>
+
+  <div id="container">
+    <header id="header">
+       <div class="container">
+			<h1><a class="png_bg" href="/">GeekPark</a></h1>
+			<nav class="global">
+				<div class="city">
+					<a class="on">北京</a>
+					<div class="list">
+						<a href="#">上海</a><a href="#">广州</a><a href="#">天津</a><a href="#">上海</a><a href="#">广州</a><a href="#">天津</a><a href="#">上海</a><a href="#">广州</a><a href="#">天津</a>
+					</div>
+				</div>
+				<ul>
+					<li class="on">
+						<a href="/read/seed" title="服装">服装</a>
+					</li>
+					<li >
+						<a href="/cast/" title="3C产品">3C产品</a>
+					</li>
+				
+					<li >
+						<a href="/event/" title="茶叶">茶叶</a>
+					</li>
+					<li >
+						<a href="/event/" title="美发造型">美发造型</a>
+					</li>
+					<li >
+						<a href="/event/" title="更多">更多</a>
+					</li>
+					
+				  
+				</ul>
+			</nav>
+			<div id="searchbox">
+				<form id="search-form" name="global-search" action="/search/all" method="post">
+					<input type="search" id="search" name="search" placeholder="搜索" autocomplete="off" class="ac_input">
+					<input type="submit" class="submit" value="">
+				</form>
+			</div>
+			<div class="tool-box">
+				<ul>
+							<li class="first">
+						<a href="/user/login" title="登录">登录</a>
+					</li><li>
+						<a href="/user/register" title="注册">注册</a>
+					</li>
+						</ul>
+			</div>
+			<div id="ajaxing" style="display: none;"></div>
+		</div>
+		
+    </header>
+    <div id="main_shop" role="main">
+		<div id="shop_wrap">
+			<div class="clearfix w-s">
+				<div class="wide">
+					<article class="view" style="min-height:550px">
+						<header>
+							<h1>审美造型设计中关村店</h1>
+						</header>
+						<div class="meta">
+							<span>受欢迎票数 </span>
+							<time pubtime="" datetime=""><small class="dot">•</small> 569</time>
+							<span class="address"><small class="dot">•</small> 格子排名</span>
+							<span class="city"><small class="dot">•</small> 6</span>
+						</div>
+						<div id="image_wrap" style="opacity: 1; ">
+						  <!-- Initially the image is a simple 1x1 pixel transparent GIF -->
+						  <img src="http://farm1.static.flickr.com/28/66523124_b468cf4978.jpg" width="500" height="375">
+						</div>
+						<div id="small_wrap">
+							<!-- "previous page" action -->
+							<a class="prev browse left disabled"></a>
+
+							<!-- root element for scrollable -->
+							<div class="scrollable" id="scrollable">
+
+							  <!-- root element for the items -->
+							  <div class="items">
+
+								<!-- 1-5 -->
+								<div>
+								  <img src="http://farm1.static.flickr.com/143/321464099_a7cfcb95cf_t.jpg" class="">
+								  <img src="http://farm4.static.flickr.com/3089/2796719087_c3ee89a730_t.jpg" class="">
+								  <img src="http://farm1.static.flickr.com/79/244441862_08ec9b6b49_t.jpg" class="">
+								  <img src="http://farm1.static.flickr.com/28/66523124_b468cf4978_t.jpg" class="active">
+								</div>
+
+								<!-- 5-10 -->
+								<div>
+								  <img src="http://farm1.static.flickr.com/163/399223609_db47d35b7c_t.jpg">
+								  <img src="http://farm1.static.flickr.com/135/321464104_c010dbf34c_t.jpg">
+								  <img src="http://farm1.static.flickr.com/40/117346184_9760f3aabc_t.jpg">
+								  <img src="http://farm1.static.flickr.com/153/399232237_6928a527c1_t.jpg">
+								</div>
+
+								<!-- 10-15 -->
+								<div>
+								  <img src="http://farm4.static.flickr.com/3629/3323896446_3b87a8bf75_t.jpg">
+								  <img src="http://farm4.static.flickr.com/3023/3323897466_e61624f6de_t.jpg">
+								  <img src="http://farm4.static.flickr.com/3650/3323058611_d35c894fab_t.jpg">
+								  <img src="http://farm4.static.flickr.com/3635/3323893254_3183671257_t.jpg">
+								</div>
+
+							  </div>
+
+							</div>
+
+							<!-- "next page" action -->
+							<a class="next browse right"></a>
+							</div>
+							<!-- 同类店铺结束 -->
+							<div class="fn-clips-about">
+								<dl class="format">
+								<dt>同类店铺</dt>
+									<dd>
+										<ul class="ui-about-list">
+											<li><a href="http://www.geekpark.net/read/view/161466" title="巨头们的购物季 | 极客早知道2012年7月21日">巨头们的购物季 | 极客早知道2012年7月21日</a></li>
+											<li><a href="http://www.geekpark.net/read/view/161222" title="10.26: Win 8 发售日 | 极客早知道2012年7月19日">10.26: Win 8 发售日 | 极客早知道2012年7月19日</a></li>
+											<li><a href="http://www.geekpark.net/read/view/160798" title="长江后浪推前浪 | 极客早知道2012年7月13日">长江后浪推前浪 | 极客早知道2012年7月13日</a></li>
+											<li><a href="http://www.geekpark.net/read/view/160637" title="极客早知道 2012年7月10日">极客早知道 2012年7月10日</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+							<!-- 同类店铺结束 -->
+							<!-- 相关城市 -->
+							<div class="fn-clips-about">
+								<dl class="format">
+								<dt>相同城市</dt>
+									<dd>
+										<ul class="ui-about-list">
+											<li><a href="http://www.geekpark.net/read/view/161466" title="巨头们的购物季 | 极客早知道2012年7月21日">巨头们的购物季 | 极客早知道2012年7月21日</a></li>
+											<li><a href="http://www.geekpark.net/read/view/161222" title="10.26: Win 8 发售日 | 极客早知道2012年7月19日">10.26: Win 8 发售日 | 极客早知道2012年7月19日</a></li>
+											<li><a href="http://www.geekpark.net/read/view/160798" title="长江后浪推前浪 | 极客早知道2012年7月13日">长江后浪推前浪 | 极客早知道2012年7月13日</a></li>
+											<li><a href="http://www.geekpark.net/read/view/160637" title="极客早知道 2012年7月10日">极客早知道 2012年7月10日</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+							<!-- 相同城市 -->
+					</article>
+				</div><!-- wide end-->
+				<div class="side">
+					<div id="compony">
+						<img src="images/1.jpg" width="360" height="151" alt="我生活在玛丽隔壁采集到想要">
+						<div class="info">
+						<span class="title">企业名称：</span>秋水伊人服饰 </br>
+						<span class="title">主营业务：</span>春秋女装</br>
+						<span class="title">所在城市：</span>北京</br>
+						<span class="title">联系方式：</span>13699999999</br>
+						<span class="title">经营地址：</span>北京市海淀区步行街36号
+						<a href="javascript:;" class="map_btn">查看地图</a>
+						<div class="map">
+						<img src="http://img.hb.aicdn.com/b2364b5ea0659e61bf34d562f801179939d860b4231f0-JWy0Sh_fw192" width="207" height="151" alt="我生活在玛丽隔壁采集到想要">
+						</div>
+						</div>
+					</div>
+					<form id="comment-box" action="" method="post" class="format comment-form">
+						<h3>参与讨论</h3>
+						<input id="parent_id" name="parent_id" type="hidden" value="0">
+						<textarea id="content" name="content" class="text" style="overflow: hidden; "></textarea>
+						<p class="act">
+							<input type="submit" class="submit png_bg" value="发言">
+						</p>
+							<div style="position: absolute; display: none; word-wrap: break-word; font-weight: normal; width: 362px; font-family: sans-serif; line-height: normal; font-size: 13px; padding: 5px 3px;clear:both; ">&nbsp;</div>
+					</form>
+					<div id="comments" class="">
+						<div class="comment"> 
+							 <div class="avatar"> 
+								 <a href="/user/home/index/9147">
+									 <img src="http://www.geekpark.net/uploads/g_avatar/1c8c0fe82ac57894413043e3d690c1e2_thumb.jpg" alt="钱雨沉"> 
+								 </a>
+							 </div>
+							 <div class="entry"> 
+								 <div class="content">
+									 <a class="user" href="/user/home/index/9147">钱雨沉</a>: <p class="first-line">诺基亚的Lumia 指甲油真是一个令人寒心并感到可笑的举动。。。</p></div>
+								 <div class="header">									 
+									 <time datetime="">约2小时以前</time>
+								 </div>
+								 <div class="toolbar"></div>
+								 <div class="comments_list"><div class="ajax_status"></div><span class="arrow-up-in"></span><div class="comment_list_area"></div><div class="comment_box_area"></div></div>
+							 </div>
+						 </div>
+					 <div class="comment clear-border"> 
+						    <div class="avatar"> 
+							 <a href="/user/home/index/7463">
+									 <img src="http://www.geekpark.net/uploads/g_avatar/0b327c02448ab3de548ee74c1bbaf05d_thumb.jpg" alt="nglie"> 
+								 </a>
+							 </div>
+							 <div class="entry"> 
+								 <div class="content">
+									 <a class="user" href="/user/home/index/7463">nglie</a>: <p class="first-line">咋没有360伪造微软补丁的消息？周鸿祎在这儿的面子可真大！</p></div>
+								 <div class="header">
+									 
+									 <time datetime="">约5小时以前</time>
+								 </div>
+								 <div class="toolbar"></div>
+								 <div class="comments_list"><div class="ajax_status"></div><span class="arrow-up-in"></span><div class="comment_list_area"></div><div class="comment_box_area"></div>
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+				</div><!-- side end-->
+			</div>
+		</div>
+    </div><!-- container end-->
+
+    <footer>
+		<div id="footerlinks">
+            <a href="http://twitter.com/jquerytools">钱方支付</a>
+            <span class="sep">|</span>
+            <a href="https://github.com/jquerytools/jquerytools">关于我们</a>
+            <span class="sep">|</span> <a href="https://github.com/jquerytools/site">联系我们</a>
+            <span class="sep">|</span>
+            <a href="https://github.com/jquerytools/jquerytools/issues">备案信息</a>
+        </div>
+
+    </footer>
+  </div> <!--! end of #container -->
+  <div id="scrollTop" >
+    <div class="level-2"></div>
+    <div class="level-3"></div>
+  </div>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+   <script src="js/jquery.infinitescroll.min.js"></script>
+  <!-- end scripts-->
+
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix(".back-png,.img-png"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+
+  <script>
+	  $(function(){
+		$(".map_btn").click(function(){
+			$(".map").slideToggle();
+		})	
+		 
+	  })
+	
+	/*var new_data = eval('('+response+')');*/
+  </script>
+  <script>
+$(function() {
+$(".scrollable").scrollable();
+
+$(".items img").click(function() {
+	// see if same thumb is being clicked
+	if ($(this).hasClass("active")) { return; }
+
+	// calclulate large image's URL based on the thumbnail URL (flickr specific)
+	var url = $(this).attr("src").replace("_t", "");
+
+	// get handle to element that wraps the image and make it semi-transparent
+	var wrap = $("#image_wrap").fadeTo("medium", 0.5);
+
+	// the large image from www.flickr.com
+	var img = new Image();
+
+
+	// call this function after it's loaded
+	img.onload = function() {
+
+		// make wrapper fully visible
+		wrap.fadeTo("fast", 1);
+
+		// change the image
+		wrap.find("img").attr("src", url);
+
+	};
+
+	// begin loading the image from www.flickr.com
+	img.src = url;
+
+	// activate item
+	$(".items img").removeClass("active");
+	$(this).addClass("active");
+
+// when page loads simulate a "click" on the first image
+}).filter(":first").click();
+});
+</script>
+
+</body>
+</html>

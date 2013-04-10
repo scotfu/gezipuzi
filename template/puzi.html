@@ -1,0 +1,270 @@
+{% extends "base.html" %}
+{% block title %}
+puzi biaoti
+{% endblock title%}
+{% block content %}
+
+{{puzi.id}}
+{{puzi.name}}
+{{puzi.address}}
+  <script src="/static/js/jquery-1.6.1.min.js"></script>
+ <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="http://jquerytools.org/media/css/standalone.css">
+  <link rel="stylesheet" type="text/css" href="http://jquerytools.org/media/css/scrollable-horizontal.css">
+  <link rel="stylesheet" type="text/css" href="http://jquerytools.org/media/css/scrollable-buttons.css">
+{{puzi.phone}}
+{{puzi.city}}
+{{puzi.weibo}}
+{{puzi.openhour}}
+{{puzi.likecount}}
+ <div id="main_shop" role="main">
+		<div id="shop_wrap">
+			<div class="clearfix w-s">
+				<div class="wide"><!--店铺左侧-->
+					<article class="view" style="min-height:550px">
+						<header>
+							<h1>{{puzi.name}}</h1>
+						</header>
+						<div class="meta">
+							<span>受欢迎票数 </span>
+							<time pubtime="" datetime=""><small class="dot">•</small> {{puzi.likecount}}</time>
+							<span class="address"><small class="dot">•</small> 格子排名</span>
+							<span class="city"><small class="dot">•</small> 6</span>
+						</div>
+						<div id="image_wrap" style="opacity: 1; ">
+						  <!-- Initially the image is a simple 1x1 pixel transparent GIF -->
+						  <img src="http://farm1.static.flickr.com/28/66523124_b468cf4978.jpg" width="500" height="375">
+						</div>
+						<div id="small_wrap">
+							<!-- "previous page" action -->
+							<a class="prev browse left disabled"></a>
+
+							<!-- root element for scrollable -->
+							<div class="scrollable" id="scrollable">
+
+							  <!-- root element for the items -->
+							  <div class="items">
+
+								<!-- 1-5 -->
+								<div>
+								  <img src="http://farm1.static.flickr.com/143/321464099_a7cfcb95cf_t.jpg" class="">
+								  <img src="http://farm4.static.flickr.com/3089/2796719087_c3ee89a730_t.jpg" class="">
+								  <img src="http://farm1.static.flickr.com/79/244441862_08ec9b6b49_t.jpg" class="">
+								  <img src="http://farm1.static.flickr.com/28/66523124_b468cf4978_t.jpg" class="active">
+								</div>
+
+								<!-- 5-10 -->
+								<div>
+								  <img src="http://farm1.static.flickr.com/163/399223609_db47d35b7c_t.jpg">
+								  <img src="http://farm1.static.flickr.com/135/321464104_c010dbf34c_t.jpg">
+								  <img src="http://farm1.static.flickr.com/40/117346184_9760f3aabc_t.jpg">
+								  <img src="http://farm1.static.flickr.com/153/399232237_6928a527c1_t.jpg">
+								</div>
+
+								<!-- 10-15 -->
+								<div>
+								  <img src="http://farm4.static.flickr.com/3629/3323896446_3b87a8bf75_t.jpg">
+								  <img src="http://farm4.static.flickr.com/3023/3323897466_e61624f6de_t.jpg">
+								  <img src="http://farm4.static.flickr.com/3650/3323058611_d35c894fab_t.jpg">
+								  <img src="http://farm4.static.flickr.com/3635/3323893254_3183671257_t.jpg">
+								</div>
+
+							  </div>
+
+							</div>
+
+							<!-- "next page" action -->
+							<a class="next browse right"></a>
+							</div>
+							<!-- 同类店铺结束 -->
+							<div class="fn-clips-about">
+								<dl class="format">
+								<dt>同类店铺</dt>
+									<dd>
+										<ul class="ui-about-list">
+											<li><a href="http://www.geekpark.net/read/view/161466" title="巨头们的购物季 | 极客早知道2012年7月21日">巨头们的购物季 | 极客早知道2012年7月21日</a></li>
+											<li><a href="http://www.geekpark.net/read/view/161222" title="10.26: Win 8 发售日 | 极客早知道2012年7月19日">10.26: Win 8 发售日 | 极客早知道2012年7月19日</a></li>
+											<li><a href="http://www.geekpark.net/read/view/160798" title="长江后浪推前浪 | 极客早知道2012年7月13日">长江后浪推前浪 | 极客早知道2012年7月13日</a></li>
+											<li><a href="http://www.geekpark.net/read/view/160637" title="极客早知道 2012年7月10日">极客早知道 2012年7月10日</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+							<!-- 同类店铺结束 -->
+							<!-- 相关城市 -->
+							<div class="fn-clips-about">
+								<dl class="format">
+								<dt>相同城市</dt>
+									<dd>
+										<ul class="ui-about-list">
+											<li><a href="http://www.geekpark.net/read/view/161466" title="巨头们的购物季 | 极客早知道2012年7月21日">巨头们的购物季 | 极客早知道2012年7月21日</a></li>
+											<li><a href="http://www.geekpark.net/read/view/161222" title="10.26: Win 8 发售日 | 极客早知道2012年7月19日">10.26: Win 8 发售日 | 极客早知道2012年7月19日</a></li>
+											<li><a href="http://www.geekpark.net/read/view/160798" title="长江后浪推前浪 | 极客早知道2012年7月13日">长江后浪推前浪 | 极客早知道2012年7月13日</a></li>
+											<li><a href="http://www.geekpark.net/read/view/160637" title="极客早知道 2012年7月10日">极客早知道 2012年7月10日</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</div>
+							<!-- 相同城市 -->
+					</article>
+				</div><!-- wide end-->
+				<div class="side">
+					<div id="compony">
+						<img src="/staic/images/1.jpg" width="360" height="151" alt="我生活在玛丽隔壁采集到想要">
+						<div class="info">
+						<span class="title">企业名称：</span>{{puzi.name}}</br>
+						<span class="title">开店时间：</span>{{puzi.openhour}}</br>
+						<span class="title">所在城市：</span>{{puzi.city}}</br>
+						<span class="title">联系方式：</span>{{puzi.phone}}</br>
+						<span class="title">经营地址：</span>{{puzi.address}}
+						<a href="javascript:;" class="map_btn">查看地图</a>
+						<div class="map">
+						<img src="http://img.hb.aicdn.com/b2364b5ea0659e61bf34d562f801179939d860b4231f0-JWy0Sh_fw192" width="207" height="151" alt="我生活在玛丽隔壁采集到想要">
+						</div>
+						</div>
+					</div>
+					
+
+		<form id="comment-box" action="/comment/add/" method="post" class="format comment-form">
+			<h3>添加评价</h3>
+			<input id="parent_id" name="parent_id" type="hidden" value="{{puzi.id}}">
+			<input type="text" class="input-xlarge" id="input01" name="title">
+			<textarea  id="textarea" name="content" class="text" style="overflow: hidden; "></textarea>
+			<p class="act">
+				<input type="submit" class="submit png_bg" value="发言">
+			</p>
+				<div style="position: absolute; display: none; word-wrap: break-word; font-weight: normal; width: 362px; font-family: sans-serif; line-height: normal; font-size: 13px; padding: 5px 3px;clear:both; ">&nbsp;</div>
+		</form>
+
+				<!--		<div id ="addcomment">
+						<div class="page-header">
+						 <h3> <i class="icon-plus"></i>添加评价</h3> 
+						</div>
+
+						<form id="" method="post" action="/comment/add/" class="horizontal">
+						<fieldset>
+						<input type="hidden" name="puzi" value="{{puzi.id}}" />
+							<div class="control-group">
+							  <label class="control-label" for="input01">标题</label>
+							  <div class="controls">
+								<input type="text" class="input-xlarge" id="input01" name="title">
+							  </div>
+							</div>
+								  <div class="control-group">
+									<label class="control-label" for="textarea">内容(支持换行操作&ltbr/>)</label>
+									<div class="controls">
+									  <textarea class="input-xlarge" id="textarea" rows="3" name="content"></textarea>
+									</div>
+								  </div>
+						  </fieldset>
+
+						<button type="submit" class="btn">提交</button>
+
+						</form> -->
+						<!--	{% if puzi.comment_set.all %}
+						{% for comment in puzi.comment_set.all %}
+							<div id="comment">
+							<div class="page-header"> 
+							<h4> <i class="icon-comment"></i>{{comment.title}} </h4>
+							{{comment.create_time}}<br/>
+							{{comment.content|safe}}<br/>
+							来自于:{{comment.user.username}}
+
+							</div>
+
+							</div>
+						{% endfor  %}
+						{% else %}
+						<div class="page-header">
+						  <h4>暂无评价</h4>
+						</div>
+
+						{% endif %}-->
+
+
+					
+						<div id="comments" class="">
+								{% if puzi.comment_set.all %}
+						{% for comment in puzi.comment_set.all %}
+							<div class="comment"> 
+							 <div class="avatar"> 
+								 <a href="/user/home/index/9147">
+									 <img src="http://www.geekpark.net/uploads/g_avatar/1c8c0fe82ac57894413043e3d690c1e2_thumb.jpg" alt="钱雨沉"> 
+								 </a>
+							 </div>
+							 <div class="entry"> 
+								 <div class="content">
+									 <a class="user" href="/user/home/index/9147">{{comment.user.username}}</a>: <p class="first-line">{{comment.content|safe}}</p></div>
+								 <div class="header">									 
+									 <time datetime="">{{comment.create_time}}</time>
+								 </div>
+							 </div>
+						 </div>
+						 {% endfor  %}
+						{% else %}
+						<div class="page-header">
+						  <h4>暂无评价</h4>
+						</div>
+						{% endif %}
+					</div>
+
+		</div>
+	</div>
+</div><!-- container end-->
+<script>
+	  $(function(){
+		$(".map_btn").click(function(){
+			$(".map").slideToggle();
+		})	
+		 
+	  })
+	
+	/*var new_data = eval('('+response+')');*/
+  </script>
+  <script>
+$(function() {
+$(".scrollable").scrollable();
+
+$(".items img").click(function() {
+	// see if same thumb is being clicked
+	alert("11");
+	if ($(this).hasClass("active")) { return; }
+
+	// calclulate large image's URL based on the thumbnail URL (flickr specific)
+	var url = $(this).attr("src").replace("_t", "");
+
+	// get handle to element that wraps the image and make it semi-transparent
+	var wrap = $("#image_wrap").fadeTo("medium", 0.5);
+
+	// the large image from www.flickr.com
+	var img = new Image();
+
+
+	// call this function after it's loaded
+	img.onload = function() {
+
+		// make wrapper fully visible
+		wrap.fadeTo("fast", 1);
+
+		// change the image
+		wrap.find("img").attr("src", url);
+
+	};
+
+	// begin loading the image from www.flickr.com
+	img.src = url;
+
+	// activate item
+	$(".items img").removeClass("active");
+	$(this).addClass("active");
+
+// when page loads simulate a "click" on the first image
+}).filter(":first").click();
+});
+</script>
+
+
+{% endblock content %}
+
+
+ 

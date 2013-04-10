@@ -1,0 +1,184 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="zh-cn" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="zh-cn" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="zh-cn" class="ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="zh-cn"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="css/style.css?v=2">   
+  <script src="js/jquery-1.6.1.min.js"></script>
+  <script src="js/libs/modernizr-1.7.min.js"></script>
+  <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jquerytools.org/media/css/standalone.css">
+  <link rel="stylesheet" type="text/css" href="http://jquerytools.org/media/css/scrollable-horizontal.css">
+  <link rel="stylesheet" type="text/css" href="http://jquerytools.org/media/css/scrollable-buttons.css">
+   <link rel="stylesheet" href="css/main.css?v=2">
+
+</head>
+
+<body>
+
+  <div id="container">
+    <header id="header">
+       <div class="container">
+			<h1><a class="png_bg" href="/">GeekPark</a></h1>
+			<nav class="global">
+				<div class="city">
+					<a class="on">北京</a>
+					<div class="list">
+						<a href="#">上海</a><a href="#">广州</a><a href="#">天津</a><a href="#">上海</a><a href="#">广州</a><a href="#">天津</a><a href="#">上海</a><a href="#">广州</a><a href="#">天津</a>
+					</div>
+				</div>
+				<ul>
+					<li class="on">
+						<a href="/read/seed" title="服装">服装</a>
+					</li>
+					<li >
+						<a href="/cast/" title="3C产品">3C产品</a>
+					</li>
+				
+					<li >
+						<a href="/event/" title="茶叶">茶叶</a>
+					</li>
+					<li >
+						<a href="/event/" title="美发造型">美发造型</a>
+					</li>
+					<li >
+						<a href="/event/" title="更多">更多</a>
+					</li>
+					
+				  
+				</ul>
+			</nav>
+			<div id="searchbox">
+				<form id="search-form" name="global-search" action="/search/all" method="post">
+					<input type="search" id="search" name="search" placeholder="搜索" autocomplete="off" class="ac_input">
+					<input type="submit" class="submit" value="">
+				</form>
+			</div>
+			<div class="tool-box">
+				<ul>
+							<li class="first">
+						<a href="/user/login" title="登录">登录</a>
+					</li><li>
+						<a href="/user/register" title="注册">注册</a>
+					</li>
+						</ul>
+			</div>
+			<div id="ajaxing" style="display: none;"></div>
+		</div>
+		
+    </header>
+    <div id="main_shop" role="main">
+		<div id="shop_wrap">
+			<div class="clearfix w-s">
+				<div class="wide">
+					<article class="view" style="min-height:550px">
+						<header>
+							<h1>欢迎加入格子店铺</h1>
+						</header>
+						<form id="register-form" class="format account" action="/accounts/register/" method="post">
+							  <div>
+							  <label for="name">name</label>
+							  <input id="name" name="username" type="text" class="text" value="">
+									</div>
+						  <div>
+<div>
+                                                          <label for="nickname">email</label>
+                                                          <input id="email" name="email" type="text" value="" class="text">
+                                                                          </div>
+							  <label for="password">密码</label>
+							  <input id="password" name="password" type="password" class="text">         </div>
+						  <div>
+							  <label for="confirm">确认密码</label>
+							  <input id="passwordconfirm" name="passwordconfirm" type="password" class="text">
+									</div>
+						  <div>
+							  <label for="nickname">昵称</label>
+							  <input id="nickname" name="nickname" type="text" value="" class="text">
+									  </div>
+						  <!--<div>
+							  <label for=''>城市</label>
+							  公园猜您在北京，没猜对？自己来<a href='javascript:;'>指定</a>吧。
+						  </div>-->
+						  
+						  <div class="aside" style="clear:both">
+							  <input id="agree" name="agree" value="checked" type="checkbox">
+							  我已经认真阅读并同意极客公园的<a href="/pub/index/terms" target="_blank">用户协议</a>。
+						  </div>
+						  <div class="act">
+							  <input type="submit" name="submit" class="submit register png_bg disabled" value="注册" disabled="disabled">
+						  </div>
+					  </form>
+				</article>
+				</div><!-- wide end-->
+				<div class="side">
+					<div class="notify">
+						<div class="info"> 
+							 注册后,您将能参加格子店铺的活动、认识和您有同样兴趣的同行。还如果您已经注册，请<a href="">登陆</a> 。	</div>
+					</div>
+				</div><!-- side end-->
+			</div>
+		</div>
+    </div><!-- container end-->
+
+    <footer>
+		<div id="footerlinks">
+            <a href="http://twitter.com/jquerytools">钱方支付</a>
+            <span class="sep">|</span>
+            <a href="https://github.com/jquerytools/jquerytools">关于我们</a>
+            <span class="sep">|</span> <a href="https://github.com/jquerytools/site">联系我们</a>
+            <span class="sep">|</span>
+            <a href="https://github.com/jquerytools/jquerytools/issues">备案信息</a>
+        </div>
+
+    </footer>
+  </div> <!--! end of #container -->
+  <div id="scrollTop" >
+    <div class="level-2"></div>
+    <div class="level-3"></div>
+  </div>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+   <script src="js/jquery.infinitescroll.min.js"></script>
+  <!-- end scripts-->
+
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix(".back-png,.img-png"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+  <![endif]-->
+	<script>
+		$(function(){
+			function setSubmit(){
+				var $agree = $('#agree'), $submit = $('#register-form').find(':submit');
+				if($agree.is(':checked')){
+					$submit.removeAttr('disabled').removeClass('disabled')
+				}else{
+					$submit.attr('disabled','disabled').addClass('disabled')
+				}
+			}
+			
+			$('#agree').change(function(){
+				setSubmit()
+			});
+			setSubmit();
+		})
+	</script>
+
+
+</body>
+</html>

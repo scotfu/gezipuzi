@@ -7,8 +7,8 @@ from django.db.models.signals import post_save
 class UserProfile(models.Model):
     user=models.OneToOneField(User)
     nickname=models.CharField(max_length=30)
-    
-    
+    user_type=models.SmallIntegerField(default=1)
+    avatar=models.FileField(upload_to='avatar', verbose_name='封面')    
     def __unicode__(self):
         return self.nickname
 

@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}格子铺子首页{% endblock title %}
+{% block content %}
+ <div id="main" role="main">
+		 {% for item in list %}
+		<div class="element_test other nonmetal   " data-symbol="H" data-category="other">
+			  <a href="#" target="_self" class="img  x">
+				 <img src="/media/{{item.image}}" width="207" height="256"  alt="{{item.name}}">
+			  </a>
+			  <div class="convo attribution clearfix"><p><a href="/puzi/{{item.puzi.id}}" title="{{item.name}}" class="img x">
+			  <img src="/media/{{item.image}}"></a><a href="/axsash123/" class="author x">{{item.puzi.name}}</a>&nbsp;采集到&nbsp;<a href="/boards/1464529/" class="x">{{item.puzi.detail}}</a></p><a title="回复" class="replyButton"></a>
+			  </div>
+			  <div class="actions"><div class="right"><a data-id="12245414" href="#" onclick="return false;" class="like btn btn11 wbtn"><strong><em></em>喜欢</strong><span></span></a></div><div class="left"></div></div>		  
+		</div>
+		
+		{% endfor %}
+	
+</div>		
+{% endblock content%}
+
+ <script>
+	  $(function(){
+		  var page = 2;
+		  var $container = $('#main');
+		  $container.isotope({
+				itemSelector : '.element_test',
+				masonry : {
+				  columnWidth : 247
+				}
+		  });
+		  var infinite_load = function(){
+			var w_h = $(window).height();
+			var d_h = $(document).height();
+			var limit = 50; 
+			if($(document).scrollTop() >= 100){
+				$("#scrollTop").fadeIn();
+			}else{
+				$("#scrollTop").fadeOut();
+			}
+			if( w_h + $(document).scrollTop() + limit >=  d_h){
+						$.ajax({
+							url: "/pu?page="+page,
+							type: "get",
+							//data: page,
+							beforeSend: function() {
+								
+							},
+							success: function(response) {
+								try {
+									var $items = $(response)
+								    page = page+1;
+									 $container.append($items).isotope( 'appended', $items);
+									
+								} catch(error) {}
+							},
+							complete: function() {},
+							error: function() {}
+						})
+				 // var $items = $('<div class="element_test"><img width="207" height="256"src="http://jpp2.imghb.com/pic/pic/77/57/33/1389728877573379_a200x400.jpeg" alt=""></div>')
+				 // $container.append($items).isotope( 'appended', $items);
+			}
+		};
+		$(window).scroll(infinite_load)
+			$("#scrollTop").click(function(){
+				$("#scrollTop").hide();
+				$('html,body').animate({scrollTop: '0px'}, 300);
+				return false;			
+			})		
+			$("#scrollTop").hover(
+				function(){
+					$(".level-2").animate({opacity: '1.0'},100);
+				},
+				function(){
+					$(".level-2").animate({opacity: '0.0'},100);
+				}
+			)
+	  })
+	
+	/*var new_data = eval('('+response+')');*/
+  </script>
